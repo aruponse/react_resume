@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { profileData } from '../data/profileData';
+import { useTranslation } from 'react-i18next';
+import { useProfileData } from '../hooks/useProfileData';
 
 const Skills = () => {
+  const { t } = useTranslation();
+  const profileData = useProfileData();
   const [hovered, setHovered] = useState(null);
 
   return (
     <section id="skills" className="py-20 px-4 min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 animate-fade-in">
       <div className="container mx-auto max-w-4xl bg-slate-800/80 rounded-2xl shadow-2xl p-8 border border-cyan-500 backdrop-blur-md">
         <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-8 animate-pulse">
-          Habilidades Profesionales
+          {t('navigation.skills')}
           <div className="w-24 h-1 bg-cyan-400 mx-auto mt-2"></div>
         </h2>
         <div className="mt-8 flex flex-wrap justify-center gap-4 relative">

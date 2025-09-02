@@ -1,0 +1,31 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "skills": "Skills",
+    "stack": "Stack"
+  },
+  "common": {
+    "loading": "Loading...",
+    "notFound": {
+      "title": "404",
+      "message": "Page not found",
+      "backHome": "Back to home"
+    }
+  },
+  "profile": {
+    "name": "Alfonso Aguilar",
+    "title": "Software Engineer",
+    "titles": "Software Development Manager | Solutions Architect | Project Manager",
+    "greeting": "Hello, I'm {{name}}"
+  },
+  "stack": {
+    "sections": {
+      "languages": "Programming Languages",
+      "frameworks": "Frameworks and Libraries",
+      "databases": "Databases",
+      "tools": "Tools and DevOps"
+    }
+  }
+}

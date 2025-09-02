@@ -1,0 +1,31 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "skills": "Habilidades",
+    "stack": "Stack"
+  },
+  "common": {
+    "loading": "Cargando...",
+    "notFound": {
+      "title": "404",
+      "message": "Página no encontrada",
+      "backHome": "Volver al inicio"
+    }
+  },
+  "profile": {
+    "name": "Alfonso Aguilar",
+    "title": "Ingeniero de Software",
+    "titles": "Gerente de Desarrollo de Software | Arquitecto de Soluciones | Project Manager",
+    "greeting": "Hola, soy {{name}}"
+  },
+  "stack": {
+    "sections": {
+      "languages": "Lenguajes de Programación",
+      "frameworks": "Frameworks y Librerías",
+      "databases": "Bases de Datos",
+      "tools": "Herramientas y DevOps"
+    }
+  }
+}

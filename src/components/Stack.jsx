@@ -1,14 +1,18 @@
 import React from 'react';
-import { profileData } from '../data/profileData';
-
-const stackSections = [
-  { key: 'languages', label: 'Lenguajes de Programación', icon: '💻' },
-  { key: 'frameworks', label: 'Frameworks y Librerías', icon: '🧩' },
-  { key: 'databases', label: 'Bases de Datos', icon: '🗄️' },
-  { key: 'tools', label: 'Herramientas y DevOps', icon: '🛠️' },
-];
+import { useTranslation } from 'react-i18next';
+import { useProfileData } from '../hooks/useProfileData';
 
 const Stack = () => {
+  const { t } = useTranslation();
+  const profileData = useProfileData();
+
+  const stackSections = [
+    { key: 'languages', label: t('stack.sections.languages'), icon: '💻' },
+    { key: 'frameworks', label: t('stack.sections.frameworks'), icon: '🧩' },
+    { key: 'databases', label: t('stack.sections.databases'), icon: '🗄️' },
+    { key: 'tools', label: t('stack.sections.tools'), icon: '🛠️' },
+  ];
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 animate-fade-in">
       <div className="max-w-4xl w-full bg-slate-800/80 rounded-2xl shadow-2xl p-8 border border-cyan-500 backdrop-blur-md">
