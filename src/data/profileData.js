@@ -5,7 +5,7 @@ export const profileData = {
   name: "Alfonso Aguilar",
   title: "Ingeniero de Software",
   titles: "Gerente de Desarrollo de Software | Arquitecto de Soluciones | Project Manager",
-  about: "Más de 20 años de experiencia liderando el ciclo de vida completo del desarrollo de software, desde la concepción hasta el despliegue. Experto en la transformación de requerimientos de negocio en soluciones tecnológicas robustas y escalables. Me especializo en la arquitectura de software, la gestión de proyectos ágiles y la dirección de equipos técnicos para entregar productos de alta calidad que superan las expectativas.",
+  about: "Gerente de Desarrollo y Arquitecto de Soluciones con más de 20 años liderando el ciclo de vida completo del software, desde la estrategia hasta la operación. He dirigido equipos multidisciplinarios y programas complejos (ERP y soluciones a medida), combinando gestión ágil, gobernanza y calidad para entregar productos robustos, seguros y mantenibles. Mi experiencia abarca diseño de arquitectura, integraciones y data sobre stacks modernos (Java, C#, Ruby, JavaScript/TypeScript; Spring Boot, Rails, React), bases de datos relacionales y NoSQL (PostgreSQL, MySQL, MongoDB, Redis) y prácticas DevOps (Docker, Kubernetes, CI/CD con GitHub Actions/Jenkins/GitLab). Me caracterizo por liderazgo, comunicación efectiva, mentoría y gestión del cambio, alineando la tecnología con los objetivos del negocio para maximizar impacto y valor.",
   contact: {
     email: "aruponse@gmail.com",
     social: [
@@ -30,13 +30,13 @@ export const profileData = {
     {
       role: "Gerente de desarrollo",
       company: "Favia CIA Ltda.",
-      period: "ene. 2020 - actualidad · 5 años 9 meses",
+      period: "ene. 2020 - actualidad",
       description: "Liderazgo integral del departamento de desarrollo, unificando responsabilidades de Project Manager, Software Architect y Chief Engineer. Dirigí la planificación estratégica, diseño de arquitectura de software y gestión de equipos para el desarrollo de sistemas ERP y soluciones a medida. Todas las actividades incluyen un fuerte componente práctico en ingeniería y desarrollo de software."
     },
     {
       role: "Ingeniero de software",
       company: "Freelance developer",
-      period: "abr. 2015 - actualidad · 10 años 6 meses",
+      period: "ene. 2017 - actualidad",
       description: "Contratista en empresas internacionales y nacionales, encargado de procesos de Arquitectura de Software, Ingeniería de Software, desarrollo de Software, administración de servidores y administración de bases de datos entre otras tareas varias de la institución."
     },
     {
@@ -66,7 +66,7 @@ export const profileData = {
     {
       role: "Desarrollador de software",
       company: "Freelance developer",
-      period: "ene. 2009 - dic. 2019 · 10 años",
+      period: "ene. 2009 - dic. 2016 · 7 años",
       description: "Encargado de procesos de Arquitectura de Software, Ingeniería de Software, desarrollo de Software, Calidad de Software, entre otras actividades dentro del área de desarrollo de software de forma independiente."
     },
     {
