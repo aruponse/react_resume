@@ -25,7 +25,7 @@ const Skills = () => {
             >
               <span className="inline-block align-middle">{skill.name}</span>
               {hovered === index && (
-                <div className="absolute left-1/2 top-full mt-2 w-max min-w-[220px] max-w-xs -translate-x-1/2 bg-slate-900 text-slate-100 text-xs rounded-lg shadow-lg px-4 py-2 z-50 border border-cyan-400 animate-fade-in-up pointer-events-none">
+                <div className="absolute left-1/2 top-full mt-2 -translate-x-1/2 bg-slate-900 text-slate-100 text-xs rounded-lg shadow-lg px-4 py-2 z-50 border border-cyan-400 animate-fade-in-up pointer-events-none whitespace-normal break-words w-auto max-w-[calc(100vw-2rem)] sm:max-w-xs">
                   {skill.description}
                 </div>
               )}

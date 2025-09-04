@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { useTranslation } from 'react-i18next';
 
 const Header = lazy(() => import('./components/Header'));
+const Footer = lazy(() => import('./components/Footer'));
 const Hero = lazy(() => import('./components/Hero'));
 const About = lazy(() => import('./components/About'));
 const Experience = lazy(() => import('./components/Experience'));
@@ -28,15 +29,18 @@ const AppRoutes = () => {
     <Router>
       <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-xl">{t('common.loading')}</div>}>
         <Header />
-        <Routes>
-          <Route path="/react_resume" element={<Hero />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/stack" element={<Stack />} />
-          <Route path="/home" element={<Navigate to="/react_resume" replace />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <main className="pt-20 pb-16">
+          <Routes>
+            <Route path="/react_resume" element={<Hero />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/stack" element={<Stack />} />
+            <Route path="/home" element={<Navigate to="/react_resume" replace />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
       </Suspense>
     </Router>
   );
