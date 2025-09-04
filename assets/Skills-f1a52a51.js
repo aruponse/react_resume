@@ -1,9 +1,0 @@
-import{u as l,r as o,j as e}from"./index-ff62b332.js";import{u as m}from"./useProfileData-a78e09ab.js";const x=()=>{const{t:n}=l(),r=m(),[i,s]=o.useState(null);return e.jsxs("section",{id:"skills",className:"py-20 px-4 min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 animate-fade-in",children:[e.jsxs("div",{className:"container mx-auto max-w-4xl bg-slate-800/80 rounded-2xl shadow-2xl p-8 border border-cyan-500 backdrop-blur-md",children:[e.jsxs("h2",{className:"text-3xl md:text-4xl font-bold text-white text-center mb-8 animate-pulse",children:[n("navigation.skills"),e.jsx("div",{className:"w-24 h-1 bg-cyan-400 mx-auto mt-2"})]}),e.jsx("div",{className:"mt-8 flex flex-wrap justify-center gap-4 relative",children:r.skills.map((t,a)=>e.jsxs("div",{className:`bg-gradient-to-r ${t.color} text-white text-sm font-medium px-5 py-2 rounded-full shadow-md transition-all duration-300 cursor-pointer animate-fade-in-up hover:scale-105 hover:ring-2 hover:ring-cyan-300 hover:ring-offset-2 hover:z-10 relative`,style:{animationDelay:`${a*40}ms`},onMouseEnter:()=>s(a),onMouseLeave:()=>s(null),children:[e.jsx("span",{className:"inline-block align-middle",children:t.name}),i===a&&e.jsx("div",{className:"absolute left-1/2 top-full mt-2 w-max min-w-[220px] max-w-xs -translate-x-1/2 bg-slate-900 text-slate-100 text-xs rounded-lg shadow-lg px-4 py-2 z-50 border border-cyan-400 animate-fade-in-up pointer-events-none",children:t.description})]},a))})]}),e.jsx("style",{children:`
-        @keyframes fade-in-up {
-          0% { opacity: 0; transform: translateY(20px); }
-          100% { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in-up {
-          animation: fade-in-up 0.7s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-        }
-      `})]})};export{x as default};
