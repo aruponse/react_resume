@@ -175,18 +175,52 @@ export const profileData = {
       { name: "SQL", level: "Intermedio", color: "from-green-400 to-gray-800" },
       { name: "NoSQL", level: "Intermedio", color: "from-gray-400 to-gray-700" },
       { name: "Kotlin", level: "Básico", color: "from-blue-400 to-cyan-600" },
+      { name: "Golang", level: "Básico", color: "from-green-400 to-cyan-700" },
       { name: "Python", level: "Básico", color: "from-green-400 to-gray-700" }
     ],
     frameworks: [
+      // Ruby Ecosystem
       { name: "Ruby on Rails", level: "Avanzado", color: "from-gray-400 to-gray-700" },
-      { name: "Django REST Framework", level: "Intermedio", color: "from-cyan-400 to-blue-600" },
-      { name: "React.js", level: "Intermedio", color: "from-cyan-400 to-blue-600" },
-      { name: "Laravel", level: "Intermedio", color: "from-green-400 to-gray-800" },
+      
+      // Spring Ecosystem (Java)
       { name: "Spring Framework", level: "Intermedio", color: "from-green-400 to-gray-800" },
       { name: "Spring Boot", level: "Intermedio", color: "from-gray-400 to-gray-700" },
+      { name: "Spring Security", level: "Intermedio", color: "from-green-400 to-gray-800" },
+      { name: "Spring Data JPA", level: "Intermedio", color: "from-green-400 to-gray-800" },
+      { name: "Spring Web", level: "Intermedio", color: "from-red-400 to-pink-600" },
+      
+      // .NET Ecosystem
+      { name: "ASP.NET Core", level: "Intermedio", color: "from-purple-400 to-indigo-600" },
+      { name: "Entity Framework Core", level: "Intermedio", color: "from-purple-400 to-indigo-600" },
+      { name: "Blazor", level: "Básico", color: "from-blue-400 to-purple-600" },
+      
+      // JavaScript/TypeScript Ecosystem
+      { name: "React.js", level: "Intermedio", color: "from-cyan-400 to-blue-600" },
       { name: "Express.js", level: "Intermedio", color: "from-cyan-400 to-blue-600" },
+      { name: "NextJS", level: "Intermedio", color: "from-cyan-400 to-gray-600" },
+      { name: "Vue.js", level: "Básico", color: "from-green-400 to-emerald-600" },
+      { name: "Angular", level: "Básico", color: "from-red-400 to-pink-600" },
+      { name: "Svelte", level: "Básico", color: "from-orange-400 to-red-600" },
+      
+      // PHP Ecosystem
+      { name: "Laravel", level: "Intermedio", color: "from-green-400 to-gray-800" },
+      
+      // Python Ecosystem
+      { name: "Django REST Framework", level: "Intermedio", color: "from-cyan-400 to-blue-600" },
       { name: "Django", level: "Básico", color: "from-green-400 to-gray-700" },
-      { name: "Flask", level: "Básico", color: "from-gray-400 to-gray-700" }
+      { name: "Flask", level: "Básico", color: "from-gray-400 to-gray-700" },
+      { name: "FastAPI", level: "Básico", color: "from-green-400 to-teal-600" },
+      { name: "Celery", level: "Básico", color: "from-green-400 to-gray-700" },
+      { name: "Pandas", level: "Básico", color: "from-blue-400 to-indigo-600" },
+      
+      // Java Microservices
+      { name: "Micronaut", level: "Básico", color: "from-blue-400 to-cyan-600" },
+      { name: "Quarkus", level: "Básico", color: "from-red-400 to-pink-600" },
+      
+      // Go Ecosystem
+      { name: "Gin", level: "Básico", color: "from-cyan-400 to-blue-600" },
+      { name: "Echo", level: "Básico", color: "from-cyan-400 to-blue-600" },
+      { name: "Fiber", level: "Básico", color: "from-gray-400 to-gray-700" }
     ],
     databases: [
       { name: "PostgreSQL", level: "Avanzado", color: "from-green-400 to-gray-700" },
@@ -199,24 +233,124 @@ export const profileData = {
       { name: "SQL Server", level: "Intermedio", color: "from-gray-400 to-gray-700" }
     ],
     tools: [
+      // Version Control & Collaboration
       { name: "Git", level: "Avanzado", color: "from-orange-500 to-yellow-400" },
       { name: "GitHub", level: "Avanzado", color: "from-gray-800 to-gray-400" },
-      { name: "Postman", level: "Avanzado", color: "from-orange-400 to-yellow-300" },
-      { name: "Swagger", level: "Avanzado", color: "from-green-400 to-yellow-400" },
-      { name: "Jira", level: "Avanzado", color: "from-blue-400 to-cyan-300" },
-      { name: "Confluence", level: "Avanzado", color: "from-blue-300 to-indigo-300" },
-      { name: "Docker", level: "Intermedio", color: "from-blue-500 to-cyan-400" },
-      { name: "Docker Swarm", level: "Intermedio", color: "from-cyan-400 to-blue-700" },
-      { name: "Github Actions", level: "Intermedio", color: "from-blue-600 to-indigo-400" },
-      { name: "Jenkins", level: "Intermedio", color: "from-red-500 to-orange-400" },
-      { name: "Kubernetes", level: "Intermedio", color: "from-blue-400 to-blue-900" },
-      { name: "Helm", level: "Intermedio", color: "from-indigo-500 to-blue-300" },
-      { name: "Puppet", level: "Intermedio", color: "from-yellow-400 to-orange-600" },
-      { name: "SonarQube", level: "Intermedio", color: "from-cyan-500 to-blue-800" },
       { name: "Bitbucket", level: "Intermedio", color: "from-blue-700 to-blue-400" },
       { name: "GitLab", level: "Intermedio", color: "from-orange-400 to-pink-500" },
       { name: "GitLab CI/CD", level: "Intermedio", color: "from-pink-500 to-yellow-400" },
-      { name: "Selenium", level: "Intermedio", color: "from-green-500 to-lime-400" }
+      
+      // Project Management & Documentation
+      { name: "Jira", level: "Avanzado", color: "from-blue-400 to-cyan-300" },
+      { name: "Trello", level: "Avanzado", color: "from-green-400 to-gray-800" },
+      { name: "Confluence", level: "Avanzado", color: "from-blue-300 to-indigo-300" },
+      
+      // API Development & Testing
+      { name: "Postman", level: "Avanzado", color: "from-orange-400 to-yellow-300" },
+      { name: "OpenAPI", level: "Avanzado", color: "from-cyan-400 to-blue-600" },
+      { name: "Swagger", level: "Avanzado", color: "from-green-400 to-yellow-400" },
+      
+      // Message Streaming (Apache Kafka Ecosystem)
+      { name: "Kafka", level: "Avanzado", color: "from-cyan-400 to-blue-600" },
+      { name: "Kafka Streams", level: "Avanzado", color: "from-cyan-400 to-blue-600" },
+      { name: "Kafka Connect", level: "Avanzado", color: "from-green-400 to-gray-800" },
+      
+      // Code Quality & Analysis
+      { name: "SonarQube", level: "Avanzado", color: "from-cyan-500 to-blue-800" },
+      
+      // IDEs & Code Editors
+      { name: "VS Code", level: "Avanzado", color: "from-blue-400 to-cyan-600" },
+      { name: "IntelliJ IDEA", level: "Avanzado", color: "from-orange-400 to-red-600" },
+      { name: "Cursor", level: "Avanzado", color: "from-gray-400 to-gray-700" },
+      { name: "Rubymine", level: "Avanzado", color: "from-red-400 to-pink-600" },
+      { name: "WebStorm", level: "Avanzado", color: "from-red-400 to-pink-600" },
+      { name: "PhpStorm", level: "Avanzado", color: "from-red-400 to-pink-600" },
+      { name: "PyCharm", level: "Avanzado", color: "from-red-400 to-pink-600" },
+      { name: "Android Studio", level: "Avanzado", color: "from-blue-400 to-cyan-600" },
+      { name: "Spring Tool Suite", level: "Avanzado", color: "from-red-400 to-pink-600" },
+      { name: "Eclipse", level: "Avanzado", color: "from-orange-400 to-red-600" },
+      { name: "NetBeans", level: "Avanzado", color: "from-red-400 to-pink-600" },
+      { name: "Visual Studio", level: "Avanzado", color: "from-purple-400 to-indigo-600" },
+      { name: "Xcode", level: "Básico", color: "from-blue-400 to-cyan-600" },
+      
+      // Containerization & Orchestration
+      { name: "Docker", level: "Intermedio", color: "from-blue-500 to-cyan-400" },
+      { name: "Docker Swarm", level: "Intermedio", color: "from-cyan-400 to-blue-700" },
+      { name: "Docker Compose", level: "Intermedio", color: "from-green-400 to-gray-800" },
+      { name: "Kubernetes", level: "Intermedio", color: "from-blue-400 to-blue-900" },
+      { name: "Helm", level: "Intermedio", color: "from-indigo-500 to-blue-300" },
+      
+      // CI/CD & Automation
+      { name: "Github Actions", level: "Intermedio", color: "from-blue-600 to-indigo-400" },
+      { name: "Jenkins", level: "Intermedio", color: "from-red-500 to-orange-400" },
+      { name: "CircleCI", level: "Intermedio", color: "from-gray-400 to-gray-700" },
+      
+      // Infrastructure as Code
+      { name: "Terraform", level: "Intermedio", color: "from-purple-400 to-indigo-600" },
+      { name: "Ansible", level: "Intermedio", color: "from-red-400 to-orange-600" },
+      { name: "Puppet", level: "Intermedio", color: "from-yellow-400 to-orange-600" },
+      
+      // Performance Testing
+      { name: "K6", level: "Intermedio", color: "from-yellow-400 to-pink-600" },
+      
+      // ORM & Database Tools
+      { name: "Prisma", level: "Intermedio", color: "from-gray-400 to-gray-700" },
+      { name: "Sequelize", level: "Intermedio", color: "from-blue-400 to-cyan-600" },
+      { name: "Hibernate", level: "Intermedio", color: "from-green-400 to-gray-800" },
+      { name: "Entity Framework", level: "Intermedio", color: "from-purple-400 to-indigo-600" },
+      { name: "DataGrip", level: "Intermedio", color: "from-cyan-400 to-blue-600" },
+      
+      // Monitoring & Observability
+      { name: "Prometheus", level: "Intermedio", color: "from-red-400 to-orange-600" },
+      { name: "Grafana", level: "Intermedio", color: "from-orange-400 to-red-600" },
+      { name: "ELK Stack", level: "Intermedio", color: "from-yellow-400 to-orange-600" },
+      { name: "Jaeger", level: "Intermedio", color: "from-blue-400 to-indigo-600" },
+      
+      // JavaScript/TypeScript Testing
+      { name: "Jest", level: "Intermedio", color: "from-yellow-400 to-orange-600" },
+      { name: "Cypress", level: "Intermedio", color: "from-green-400 to-emerald-600" },
+      { name: "Bun Test", level: "Intermedio", color: "from-yellow-400 to-orange-600" },
+      { name: "Mocha", level: "Intermedio", color: "from-green-400 to-emerald-600" },
+      { name: "Chai", level: "Intermedio", color: "from-green-400 to-emerald-600" },
+      { name: "Jasmine", level: "Intermedio", color: "from-yellow-400 to-orange-600" },
+      { name: "Karma", level: "Intermedio", color: "from-red-400 to-pink-600" },
+      { name: "Playwright", level: "Intermedio", color: "from-blue-400 to-indigo-600" },
+      { name: "Selenium", level: "Intermedio", color: "from-green-500 to-lime-400" },
+      
+      // Ruby Testing
+      { name: "RSpec", level: "Intermedio", color: "from-red-400 to-pink-600" },
+      { name: "Minitest", level: "Intermedio", color: "from-red-400 to-pink-600" },
+      { name: "Cucumber", level: "Intermedio", color: "from-green-400 to-emerald-600" },
+      
+      // Java Testing
+      { name: "TestNG", level: "Intermedio", color: "from-red-400 to-pink-600" },
+      { name: "JUnit", level: "Intermedio", color: "from-green-400 to-teal-600" },
+      { name: "Mockito", level: "Intermedio", color: "from-blue-400 to-cyan-600" },
+      { name: "AssertJ", level: "Intermedio", color: "from-green-400 to-teal-600" },
+      
+      // .NET Testing
+      { name: "NUnit", level: "Intermedio", color: "from-green-400 to-teal-600" },
+      { name: "xUnit", level: "Intermedio", color: "from-purple-400 to-indigo-600" },
+      { name: "MSTest", level: "Intermedio", color: "from-purple-400 to-indigo-600" },
+      { name: "Moq", level: "Intermedio", color: "from-purple-400 to-indigo-600" },
+      { name: "FluentAssertions", level: "Intermedio", color: "from-purple-400 to-indigo-600" },
+      
+      // PHP Testing
+      { name: "PHPUnit", level: "Intermedio", color: "from-purple-400 to-indigo-600" },
+      { name: "Codeception", level: "Intermedio", color: "from-purple-400 to-indigo-600" },
+      { name: "Behat", level: "Intermedio", color: "from-green-400 to-emerald-600" },
+      
+      // Python Testing
+      { name: "pytest", level: "Intermedio", color: "from-yellow-400 to-orange-600" },
+      { name: "unittest", level: "Intermedio", color: "from-blue-400 to-indigo-600" },
+      { name: "nose2", level: "Intermedio", color: "from-green-400 to-teal-600" },
+      { name: "Robot Framework", level: "Intermedio", color: "from-orange-400 to-red-600" },
+      
+      // Go Testing
+      { name: "Go Test", level: "Intermedio", color: "from-cyan-400 to-blue-600" },
+      { name: "Testify", level: "Intermedio", color: "from-cyan-400 to-blue-600" },
+      { name: "Ginkgo", level: "Intermedio", color: "from-green-400 to-emerald-600" },
+      { name: "Gomega", level: "Intermedio", color: "from-green-400 to-emerald-600" }
     ]
   }
 };
