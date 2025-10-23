@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useProfileData } from '../hooks/useProfileData';
+import { useSkillsData } from '../hooks/useSkillsData';
 
 const Skills = () => {
   const { t } = useTranslation();
-  const profileData = useProfileData();
+  const skillsData = useSkillsData();
   const [hovered, setHovered] = useState(null);
 
   return (
@@ -15,7 +15,7 @@ const Skills = () => {
           <div className="w-24 h-1 bg-cyan-400 mx-auto mt-2"></div>
         </h2>
         <div className="mt-8 flex flex-wrap justify-center gap-4 relative">
-          {profileData.skills.map((skill, index) => (
+          {skillsData.map((skill, index) => (
             <div
               key={index}
               className={`bg-gradient-to-r ${skill.color} text-white text-sm font-medium px-5 py-2 rounded-full shadow-md transition-all duration-300 cursor-pointer animate-fade-in-up hover:scale-105 hover:ring-2 hover:ring-cyan-300 hover:ring-offset-2 hover:z-10 relative`}

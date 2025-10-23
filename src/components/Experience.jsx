@@ -1,11 +1,11 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useProfileData } from '../hooks/useProfileData';
+import { useExperienceData } from '../hooks/useExperienceData';
 import ExperienceCard from './ExperienceCard';
 
 const Experience = () => {
   const { t } = useTranslation();
-  const profileData = useProfileData();
+  const experienceData = useExperienceData();
 
   return (
     <section id="experience" className="py-20 px-4 bg-slate-900/50">
@@ -15,7 +15,7 @@ const Experience = () => {
           <div className="w-24 h-1 bg-cyan-400 mx-auto mt-2"></div>
         </h2>
         <div className="mt-12 relative">
-          {profileData.experience.map((job, index) => (
+          {experienceData.map((job, index) => (
             <ExperienceCard
               key={index}
               role={job.role}

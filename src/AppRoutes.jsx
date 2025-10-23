@@ -31,12 +31,21 @@ const AppRoutes = () => {
         <Header />
         <main className="pt-20 pb-16">
           <Routes>
-            <Route path="/react_resume" element={<Hero />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/stack" element={<Stack />} />
+            <Route path="/react_resume/*" element={
+              <Routes>
+                <Route index element={<Hero />} />
+                <Route path="about" element={<About />} />
+                <Route path="experience" element={<Experience />} />
+                <Route path="skills" element={<Skills />} />
+                <Route path="stack" element={<Stack />} />
+              </Routes>
+            } />
+            <Route path="/about" element={<Navigate to="/react_resume/about" replace />} />
+            <Route path="/experience" element={<Navigate to="/react_resume/experience" replace />} />
+            <Route path="/skills" element={<Navigate to="/react_resume/skills" replace />} />
+            <Route path="/stack" element={<Navigate to="/react_resume/stack" replace />} />
             <Route path="/home" element={<Navigate to="/react_resume" replace />} />
+            <Route path="/" element={<Navigate to="/react_resume" replace />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

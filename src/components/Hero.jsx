@@ -30,7 +30,7 @@ const Hero = () => {
             {t('navigation.about')}
           </Link>
           <Link to="/stack" className="bg-cyan-500 text-white font-semibold px-6 py-3 rounded-lg hover:bg-cyan-600 transition-all duration-300 transform hover:scale-105">
-            {profileData.stack.title}
+            {t('navigation.stack')}
           </Link>
           <Link to="/experience" className="bg-purple-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-purple-700 transition-all duration-300 transform hover:scale-105">
             {t('navigation.experience')}

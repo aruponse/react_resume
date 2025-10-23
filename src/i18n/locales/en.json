@@ -21,6 +21,7 @@
     "greeting": "Hello, I'm {{name}}"
   },
   "stack": {
+    "title": "Technology Stack",
     "sections": {
       "languages": "Programming Languages",
       "frameworks": "Frameworks and Libraries",

@@ -11,10 +11,10 @@ const Header = () => {
 
   const navLinks = [
     { name: t('navigation.home'), path: '/react_resume' },
-    { name: t('navigation.about'), path: '/about' },
-    { name: t('navigation.experience'), path: '/experience' },
-    { name: t('navigation.skills'), path: '/skills' },
-    { name: t('navigation.stack'), path: '/stack' },
+    { name: t('navigation.about'), path: '/react_resume/about' },
+    { name: t('navigation.experience'), path: '/react_resume/experience' },
+    { name: t('navigation.skills'), path: '/react_resume/skills' },
+    { name: t('navigation.stack'), path: '/react_resume/stack' },
   ];
 
   const toggleLanguage = () => {
