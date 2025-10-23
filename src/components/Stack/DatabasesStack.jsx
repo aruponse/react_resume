@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useStackData } from '../../hooks/useStackData';
-import StackCard from './StackCard';
+import { StackCard } from '../shared';
 
 const DatabasesStack = () => {
   const { t } = useTranslation();

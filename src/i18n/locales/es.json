@@ -27,6 +27,7 @@
       "frameworks": "Frameworks y Librerías",
       "databases": "Bases de Datos",
       "tools": "Herramientas y DevOps"
-    }
+    },
+    "languageType": "Lenguaje de programación"
   }
 }
